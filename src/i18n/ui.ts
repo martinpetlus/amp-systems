@@ -15,6 +15,10 @@ export const ui = {
     "hero.subtitle":
       "Statická webová stránka postavená na Astro s podporou viacerých jazykov.",
     "lang.switch": "Jazyk",
+    "nav.contact": "Kontakt",
+    "contact.title": "Kontakt",
+    "contact.intro": "Napíšte nám na nasledujúcu e-mailovú adresu:",
+    "contact.email": "kontakt@amp-systems.sk",
   },
   en: {
     "nav.home": "Home",
@@ -23,6 +27,10 @@ export const ui = {
     "hero.subtitle":
       "A static website built with Astro and multi-language support.",
     "lang.switch": "Language",
+    "nav.contact": "Contact",
+    "contact.title": "Contact",
+    "contact.intro": "Reach us at the following email address:",
+    "contact.email": "contact@amp-systems.sk",
   },
 } as const;
 

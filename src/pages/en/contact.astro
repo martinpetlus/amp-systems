@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { useTranslations } from "../../i18n/ui";
+
+const t = useTranslations("en");
+---
+
+<BaseLayout title={`${t("contact.title")} | ${t("site.title")}`}>
+  <h1 class="text-4xl font-bold tracking-tight">{t("contact.title")}</h1>
+  <p class="mt-4 text-lg text-slate-600">{t("contact.intro")}</p>
+  <p class="mt-2">
+    <a
+      class="text-sky-600 underline hover:text-sky-800"
+      href={`mailto:${t("contact.email")}`}>{t("contact.email")}</a
+    >
+  </p>
+</BaseLayout>
