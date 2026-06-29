@@ -56,12 +56,66 @@ const contactHref = getRelativeLocaleUrl(
           />
           <span class="text-lg">{t("site.title")}</span>
         </a>
-        <nav class="flex items-center gap-4 text-sm">
+        <nav class="hidden items-center gap-4 text-sm sm:flex">
           <a href={homeHref} class="hover:underline">{t("nav.home")}</a>
           <a href={contactHref} class="hover:underline">{t("nav.contact")}</a>
         </nav>
       </div>
-      <LanguageSwitcher />
+      <div class="flex items-center gap-2">
+        <LanguageSwitcher />
+        <details class="group relative sm:hidden">
+          <summary
+            class="flex cursor-pointer list-none items-center rounded p-1 text-slate-700 hover:bg-slate-200"
+            aria-label={t("nav.menu")}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" class="group-open:hidden"
+              ></line>
+              <line x1="3" y1="12" x2="21" y2="12" class="group-open:hidden"
+              ></line>
+              <line x1="3" y1="18" x2="21" y2="18" class="group-open:hidden"
+              ></line>
+              <line
+                x1="6"
+                y1="6"
+                x2="18"
+                y2="18"
+                class="hidden group-open:block"></line>
+              <line
+                x1="6"
+                y1="18"
+                x2="18"
+                y2="6"
+                class="hidden group-open:block"></line>
+            </svg>
+          </summary>
+          <nav
+            aria-label="Main"
+            class="absolute right-0 z-10 mt-1 min-w-[8rem] rounded-md border border-slate-200 bg-white py-1 text-sm shadow-md"
+          >
+            <a
+              href={homeHref}
+              class="block px-3 py-1.5 text-slate-700 hover:bg-slate-100"
+              >{t("nav.home")}</a
+            >
+            <a
+              href={contactHref}
+              class="block px-3 py-1.5 text-slate-700 hover:bg-slate-100"
+              >{t("nav.contact")}</a
+            >
+          </nav>
+        </details>
+      </div>
     </header>
     <main class="mx-auto max-w-3xl px-6 py-12">
       <slot />

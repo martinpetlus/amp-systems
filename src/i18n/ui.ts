@@ -16,6 +16,7 @@ export const ui = {
       "Statická webová stránka postavená na Astro s podporou viacerých jazykov.",
     "lang.switch": "Jazyk",
     "nav.contact": "Kontakt",
+    "nav.menu": "Menu",
     "contact.title": "Kontakt",
     "contact.intro":
       "Radi vám pomôžeme. Ozvite sa nám e-mailom alebo telefonicky.",
@@ -32,6 +33,7 @@ export const ui = {
       "A static website built with Astro and multi-language support.",
     "lang.switch": "Language",
     "nav.contact": "Contact",
+    "nav.menu": "Menu",
     "contact.title": "Contact",
     "contact.intro": "We'd love to hear from you — reach us by email or phone.",
     "contact.emailLabel": "Email",
