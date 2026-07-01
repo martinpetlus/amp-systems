@@ -33,6 +33,7 @@ export const ui = {
     "notFound.message":
       "Ľutujeme, požadovaná stránka neexistuje alebo bola presunutá.",
     "notFound.home": "Späť na domovskú stránku",
+    "footer.rights": "Všetky práva vyhradené.",
   },
   en: {
     "nav.home": "Home",
@@ -58,6 +59,7 @@ export const ui = {
     "notFound.message":
       "Sorry, the page you are looking for does not exist or has been moved.",
     "notFound.home": "Back to home",
+    "footer.rights": "All rights reserved.",
   },
 } as const;
 
