@@ -4,15 +4,33 @@ import ServicesGrid from "../../components/ServicesGrid.astro";
 import { getRelativeLocaleUrl } from "astro:i18n";
 import { useTranslations } from "../../i18n/ui";
 import { servicesContent } from "../../i18n/services";
+import { routes } from "../../i18n/routes";
 
 const t = useTranslations("en");
 const services = servicesContent.en;
-const servicesHref = getRelativeLocaleUrl("en", "services");
+const servicesHref = getRelativeLocaleUrl("en", routes.services.en);
+const contactHref = getRelativeLocaleUrl("en", routes.contact.en);
 ---
 
 <BaseLayout>
   <h1 class="text-4xl font-bold tracking-tight">{t("hero.title")}</h1>
   <p class="mt-4 text-lg text-slate-600">{t("hero.subtitle")}</p>
+
+  <div class="mt-8 flex flex-wrap gap-3">
+    <a
+      href={contactHref}
+      class="inline-flex items-center gap-1 rounded-lg bg-slate-900 px-5 py-2.5 font-medium text-white transition hover:bg-slate-700"
+    >
+      {t("nav.contact")}
+      <span aria-hidden="true">→</span>
+    </a>
+    <a
+      href={servicesHref}
+      class="inline-flex items-center rounded-lg border border-slate-300 px-5 py-2.5 font-medium text-slate-700 transition hover:bg-slate-100"
+    >
+      {t("nav.services")}
+    </a>
+  </div>
 
   <section class="mt-16">
     <h2 class="text-2xl font-bold tracking-tight">{services.title}</h2>
