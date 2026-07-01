@@ -11,6 +11,8 @@ export const ui = {
   sk: {
     "nav.home": "Domov",
     "site.title": "AMP Systems",
+    "site.description":
+      "Priemyselná automatizácia, opravy výrobných liniek, spracovanie dát a AI riešenia pre výrobné firmy.",
     "hero.title": "Vitajte v AMP Systems",
     "hero.subtitle":
       "Udržiavame vaše výrobné linky v chode a meníme ich dáta na prehľadné informácie a AI riešenia.",
@@ -31,6 +33,8 @@ export const ui = {
   en: {
     "nav.home": "Home",
     "site.title": "AMP Systems",
+    "site.description":
+      "Industrial automation, production line repairs, data processing and AI solutions for manufacturing companies.",
     "hero.title": "Welcome to AMP Systems",
     "hero.subtitle":
       "We keep your production lines running and turn their data into clear insights and AI solutions.",

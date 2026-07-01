@@ -8,7 +8,12 @@ const team = teamContent.en;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
-<BaseLayout title={`${team.title} | ${t("site.title")}`} wide page="about">
+<BaseLayout
+  title={`${team.title} | ${t("site.title")}`}
+  description={team.intro}
+  wide
+  page="about"
+>
   <h1 class="text-4xl font-bold tracking-tight">{team.title}</h1>
   <p class="mt-4 max-w-3xl text-lg text-slate-600">{team.intro}</p>
 
