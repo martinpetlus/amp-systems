@@ -28,6 +28,10 @@ export const ui = {
     "contact.email": "kontakt@amp-systems.sk",
     "contact.phoneLabel": "Telefón",
     "contact.phone": "+421 915 425 052",
+    "contact.copy": "Kopírovať",
+    "contact.copied": "Skopírované",
+    "contact.mailSubject": "Dopyt z webu AMP Systems",
+    "contact.mailBody": "Dobrý deň,\n\n",
     "services.home.cta": "Zobraziť všetky služby",
     "notFound.title": "Stránka sa nenašla",
     "notFound.message":
@@ -54,6 +58,10 @@ export const ui = {
     "contact.email": "contact@amp-systems.sk",
     "contact.phoneLabel": "Phone",
     "contact.phone": "+421 915 425 052",
+    "contact.copy": "Copy",
+    "contact.copied": "Copied",
+    "contact.mailSubject": "Inquiry from the AMP Systems website",
+    "contact.mailBody": "Hello,\n\n",
     "services.home.cta": "View all services",
     "notFound.title": "Page not found",
     "notFound.message":
