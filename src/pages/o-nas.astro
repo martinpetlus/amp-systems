@@ -1,11 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { getRelativeLocaleUrl } from "astro:i18n";
 import { useTranslations } from "../i18n/ui";
 import { teamContent } from "../i18n/team";
+import { routes } from "../i18n/routes";
 
 const t = useTranslations("sk");
 const team = teamContent.sk;
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const contactHref = getRelativeLocaleUrl("sk", routes.contact.sk);
 ---
 
 <BaseLayout
@@ -56,5 +59,15 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, "");
         </div>
       ))
     }
+  </div>
+
+  <div class="mt-6">
+    <a
+      href={contactHref}
+      class="inline-flex items-center gap-1 font-medium text-sky-600 hover:text-sky-800"
+    >
+      {t("nav.contact")}
+      <span aria-hidden="true">→</span>
+    </a>
   </div>
 </BaseLayout>
